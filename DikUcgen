@@ -1,0 +1,22 @@
+# Java101
+import java.util.Scanner;
+public class DikUcgen {
+   public static void main(String[] args) {
+        double birinciKenar,ikinciKenar,ucuncuKenar,u,cevre,alan;
+
+        Scanner input =new Scanner(System.in);
+        System.out.println("Birinci kenari giriniz:");
+        birinciKenar=input.nextDouble();
+        System.out.println("Ikinci kenari giriniz:");
+        ikinciKenar=input.nextDouble();
+        System.out.println("Ucuncu Kenari Giriniz:");
+        ucuncuKenar=input.nextDouble();
+
+        u=(birinciKenar+ikinciKenar+ucuncuKenar)/2;
+        cevre= u*2;
+        alan= Math.sqrt(u*(u-birinciKenar)*(u-ikinciKenar)*(u*ucuncuKenar));
+
+        System.out.println("Alan:"+alan);
+
+    }
+}
