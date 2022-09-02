@@ -1,0 +1,19 @@
+# Java101
+import java.util.Scanner;
+
+public class Taksimetre{
+    public static void main(String[] args) {
+        double kmUcret=2.20;
+        double minimumUcret=20;
+        double acilisUcret=10;
+
+        Scanner input=new Scanner(System.in);
+
+        System.out.print("Mesafe giriniz:");
+        double mesafe=input.nextDouble();
+
+        double toplamUcret=acilisUcret+kmUcret*mesafe;
+
+        System.out.println("Odemeniz gereken miktar:"+(toplamUcret > minimumUcret ? toplamUcret : minimumUcret));
+    }
+}
